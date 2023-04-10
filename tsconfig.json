@@ -15,8 +15,11 @@
     "types": ["vite/client", "vitest/globals", "node"],
     "skipLibCheck": true,
     "baseUrl": ".",
+    "outDir": "dist_types",
     "paths": {
       "@/*": ["./src/*"]
     }
   },
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "exclude": ["node_modules", "**/node_modules"]
 }
