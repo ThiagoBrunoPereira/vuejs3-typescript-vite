@@ -1,0 +1,44 @@
+.fullscreen,
+.fixed-full {
+  @apply absolute top-0 right-0 bottom-0 left-0 z-50;
+}
+
+.fixed-full,
+.fixed-bottom,
+.fixed-left,
+.fixed-right,
+.fixed-top {
+  @apply fixed z-50;
+}
+
+.fixed-top {
+  @apply top-0 left-0 right-0;
+}
+
+.fixed-right {
+  @apply top-0 right-0 bottom-0;
+}
+
+.fixed-bottom {
+  @apply right-0 bottom-0 left-0;
+}
+
+.fixed-left {
+  @apply top-0 bottom-0 left-0;
+}
+
+.fixed-top-left {
+  @apply top-0 left-0;
+}
+
+.fixed-top-right {
+  @apply top-0 right-0;
+}
+
+.fixed-bottom-left {
+  @apply bottom-0 left-0;
+}
+
+.fixed-bottom-right {
+  @apply bottom-0 right-0;
+}
