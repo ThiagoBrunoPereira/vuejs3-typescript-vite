@@ -1,0 +1,100 @@
+.x-modal {
+  .x-modal__title {
+    @apply text-xl font-medium leading-8;
+  }
+  .x-modal__inner {
+    @apply outline-none;
+
+    > div {
+      @apply overflow-auto rounded-lg will-change-scroll shadow-xl pointer-events-auto;
+    }
+
+    &.x-modal__inner--square > div {
+      @apply rounded-none;
+    }
+
+    &.x-modal__inner--minimized {
+      @apply p-4;
+      > div {
+        @apply max-h-[calc(100vh_-_48px)];
+      }
+    }
+
+    &.x-modal__inner--maximized {
+      > div {
+        @apply h-full w-full max-h-screen rounded-none top-0 left-0;
+      }
+    }
+
+    &.x-modal__inner--top,
+    &.x-modal__inner--bottom {
+      @apply pt-0 pb-0;
+    }
+
+    &.x-modal__inner--right,
+    &.x-modal__inner--left {
+      @apply pr-0 pl-0;
+    }
+
+    &.x-modal__inner--left,
+    &.x-modal__inner--top {
+      &:not(.x-modal__inner--animating) > div {
+        @apply rounded-tl-none;
+      }
+    }
+
+    &.x-modal__inner--right,
+    &.x-modal__inner--top {
+      &:not(.x-modal__inner--animating) > div {
+        @apply rounded-tr-none;
+      }
+    }
+    &.x-modal__inner--left,
+    &.x-modal__inner--bottom {
+      &:not(.x-modal__inner--animating) > div {
+        @apply rounded-bl-none;
+      }
+    }
+
+    &.x-modal__inner--right,
+    &.x-modal__inner--bottom {
+      &:not(.x-modal__inner--animating) > div {
+        @apply rounded-br-none;
+      }
+    }
+
+    &.x-modal__inner--fullwidth {
+      > div {
+        @apply w-full max-w-full;
+      }
+    }
+    &.x-modal__inner--fullheight {
+      > div {
+        @apply h-full max-h-full;
+      }
+    }
+  }
+
+  .x-modal__backdrop {
+    @apply outline-none z-50 bg-black/40 pointer-events-auto;
+  }
+}
+
+.x-modal__inner {
+  &.x-modal__inner--top,
+  &.x-modal__inner--bottom {
+    @apply sm:pl-0 sm:pr-0;
+  }
+}
+
+.x-body--modal {
+  @apply overflow-hidden pr-2;
+}
+
+.x-nav--modal {
+  @apply pr-[calc(1rem_+_8px)];
+}
+
+.fullscreen {
+  @apply fixed h-screen w-screen;
+}
