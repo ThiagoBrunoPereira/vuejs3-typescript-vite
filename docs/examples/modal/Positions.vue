@@ -32,7 +32,7 @@
 </template>
 
 <script setup lang="ts">
-import { ArrowDownCircleIcon, ArrowLeftCircleIcon, ArrowUpCircleIcon, ArrowRightCircleIcon  } from "@heroicons/vue/24/outline";
+import { ArrowDownCircleIcon, ArrowLeftCircleIcon, ArrowUpCircleIcon, ArrowRightCircleIcon  } from "@heroicons/vue/24/outline/index.js";
 import { XModal } from '@/components/modal';
 import { XModalRawPositionClassVariant } from '@/components/modal/types';
 import { ref } from 'vue';
