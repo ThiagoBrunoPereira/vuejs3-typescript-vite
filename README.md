@@ -1,3 +1,8 @@
+# Framework UI
+
+Get started with Framework by including it into your project using Yarn.
+
+Framework UI is a library of components built on top of the utility-classes from Tailwind CSS and it also includes a JavaScript file that makes interactive elements works, such as modals, cards. Learn how to get started by following this quickstart guide.
 # vue3-typescript-vite
 
 This template should help get you started developing with Vue 3 in Vite.
@@ -21,33 +26,39 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+## Project Setup VitePress
 
 ```sh
-npm install
+yarn install
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
-npm run dev
+yarn dev
 ```
 
 ### Type-Check, Compile and Minify for Production
 
 ```sh
-npm run build
+yarn build
 ```
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+## Type-Check, Compile and Minify for Production
 
 ```sh
-npm run test:unit
+yarn build:prodution
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+### Type-Check
 
 ```sh
-npm run lint
+yarn build:types
 ```
-# vuejs3-typescript-vite
+
+### Publish on NPM https://www.npmjs.com/package/vue3-typescript-vite-thiago
+
+```sh
+npm publish
+```
+
