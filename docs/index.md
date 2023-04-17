@@ -8,6 +8,9 @@ hero:
   name: Framework UI
   text: Base Framework products, built with TailwindCSS, Vite & Vue
   tagline: Bringing simple and highly complex components.
+  image:
+    src: /assets/logo.png
+    alt: Portabilis Logo
   actions:
     - theme: brand
       text: Get Started
