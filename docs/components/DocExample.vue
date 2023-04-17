@@ -42,7 +42,7 @@
 <script setup lang="ts">
 import { markRaw, onMounted, reactive, ref } from 'vue';
 import DocCode from './DocCode.vue';
-import { CodeBracketIcon } from "@heroicons/vue/20/solid";
+import { CodeBracketIcon } from "@heroicons/vue/24/outline/index.js";
 
 const importExampleComponent = import.meta.glob('@examples/**/*.vue');
 const importExampleComponentRaw = import.meta.glob('@examples/**/*.vue', {
